@@ -43,3 +43,9 @@ SELECT e.EmployeeID, e.FirstName, e.LastName, o.OrderID, o.CustomerID, o.ShipCou
 	FROM Employees AS e
     LEFT JOIN Orders AS o
 		ON e.EmployeeID = o.EmployeeID;
+        
+-- transportistas (shippers) y los pedidos que han enviado
+-- *transportistas, incluso si no han enviado pedidos
+Shippers
+
+SELECT s.ShipperID, s.CompanyName 
